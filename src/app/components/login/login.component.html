@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <div class="body">
+        
+    <div class="main">  	
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+            <div class="login">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Inicio Sesion</label>
+                    <img id="logo" src="../../../assets/img/login_295128.png" alt="Login">
+                    <input class="form-control" type="email" name="email" placeholder="Ingrese usuario" required="">
+                    <input class="form-control " type="password" name="pswd" placeholder="Ingrese Password" required="">
+                    <button routerLink="/dashboard">Ingresar</button>
+                </form>
+            </div>
+    
+      <div class="register">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Registrar Usuario</label>
+                    <input class="input" [(ngModel)]="username" type="text" name="txt" placeholder="Username" required="" >
+                    <input class="input" [(ngModel)]="email" type="email" name="email" placeholder="Email" required="">
+                    <input class="input" [(ngModel)]="password" type="password" name="pswd" placeholder="Password" required="">
+                    <button (click)="addUser()">Registrar</button>
+                </form>
+            </div>
+    </div>
+    </div>
+</div>

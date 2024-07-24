@@ -1,0 +1,57 @@
+/* src/styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../src/assets/img/bm.jpeg'); /* Ruta a tu imagen */
+    background-size: cover; /* Esto hará que la imagen cubra toda el área */
+    background-position: center; /* Esto centrará la imagen */
+    width: 100%;
+    height: 100%;
+}
+
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #240046;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 24px;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+}
+
+.container, .module {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
